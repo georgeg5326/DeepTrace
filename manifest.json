@@ -4,8 +4,13 @@
     "version": "1.0",
     "description": "A minimal Chrome extension with browsing history permission and a popup UI.",
     "permissions": [
-      "history"
+      "history",
+      "webNavigation",
+      "storage"
     ],
+    "background": {
+      "service_worker": "background.js"
+    },
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
